@@ -2,7 +2,7 @@
 import { signIn } from "next-auth/react";
 import React from "react";
 
-const Button = ({ id }) => {
+const Button = ({ id }: string) => {
   return (
     <button
       onClick={() => signIn(id, { callbackUrl: "/" })}
