@@ -21,7 +21,6 @@ const DetailBook = async ({ params }: { params: Promise<{ id: string }> }) => {
             className="text-gray-700 mt-2"
             dangerouslySetInnerHTML={{ __html: book.content }}
           />
-
           <div className="flex justify-between items-center mt-2">
             <span className="text-sm text-gray-500">
               公開日:{new Date(book.publishedAt!).toLocaleString()}
