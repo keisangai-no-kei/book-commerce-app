@@ -46,7 +46,8 @@ const Book = ({ book, isPurchased }: BookProps) => {
       if (responseData) {
         router.push(responseData.checkout_url);
       }
-    } catch (err: unknown) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (err: any) {
       console.log(err);
     }
   };
