@@ -1,10 +1,10 @@
-import { getProviders } from "next-auth/react";
-import Button from "../components/Button";
+// import { getProviders } from "next-auth/react";
+// import Button from "../components/Button";
 
 async function Login() {
-  const providers = await getProviders().then((res) => {
-    return res;
-  });
+  // const providers = await getProviders().then((res) => {
+  //   return res;
+  // });
   return (
     <div className="flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
@@ -13,7 +13,7 @@ async function Login() {
             アカウントにログイン
           </h2>
         </div>
-        <div className="mt-8 space-y-6">
+        {/* <div className="mt-8 space-y-6">
           {providers &&
             Object.values(providers).map((provider) => {
               return (
@@ -22,7 +22,7 @@ async function Login() {
                 </div>
               );
             })}
-        </div>
+        </div> */}
       </div>
     </div>
   );
