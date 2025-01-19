@@ -8,8 +8,8 @@ import PurchasedBookDetail from "../components/PurchasedBookDetail";
 export default async function ProfilePage() {
   const session = await getServerSession(nextAuthOptions);
   const user = session?.user as User;
-
   let purchasedBooksDetail: BookType[] = [];
+
   if (user) {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/purchases/${user.id}`,
